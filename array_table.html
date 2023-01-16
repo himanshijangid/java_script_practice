@@ -10,18 +10,34 @@
 </head>
 <body>  
     <script>
-        var ary = new array[10];
-        var a 
-        for(a=0; a<=9; a++){
-          ary[a]=prompt("Enter a value of " + a + " : ");
+       
 
-        }
-        for(var a = 0 ; a<5 ; a++){
-             document.write(ary[a]+"<br>");
-        }
 
+
+        var ary = [
+            ["Name","Age","Gender","Class"],
+            ["Himanshi",26,"Female","M.C.A"],
+            ["Komal",26,"Female","M.C.A"],
+            ["Anjana",27,"Female","B.C.A"],
+            ["Priyanka",28,"Female","M.C.A"],
+            ["Anita",27,"Female","M.C.A"],
+            ["Kavita", 26,"Female","M.C.A"],
+            ["Suman" ,28,"Female", "M.C.A"],
+            ["Divya",26,"Female","B.C.A"]
+
+        ];
+        document.write("<table border = '1px' cellspacing='1'>")
+        for(a=0; a<ary.length ;a++){
+            document.write("<tr>");
+                for(b=0; b<4;b++){
+                    document.write("<td>" +ary[a][b]+"<td>")
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
     </script>
-     <br>
-     <a href="index.html"><button type="button" class="btn btn-primary ">back to home</button></a>
+    <br>
+    <a href="index.html"><button type="button" class="btn btn-primary ">back to home</button></a>
+
 </body> 
 </html>

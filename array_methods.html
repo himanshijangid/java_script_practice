@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>ArrayMethods</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>(1)--sort & reverse--</h3><br>")
+            var a = [100,200,300,400,500]
+            document.write(a + "<br>");
+            a.sort();
+            document.write(a + "<br>");
+            a.reverse();
+            document.write(a + "<br>");
+
+
+
+            document.write("<h3>(2)--push & pop--</h3><br>")
+            var b =[100,200,300,400,500]
+            document.write(b + "<br>")
+            b.pop();
+            document.write(b + "<br>")
+            b.push("ram");
+            document.write(b + "<br>")
+
+
+
+            document.write("<h3>(3)--Shift & Unshift--</h3><br>")
+            var c =[100,200,300,400,500]
+            document.write(c + "<br>")
+            c.shift();
+            document.write(c+ "<br>")
+            c.unshift("ram");
+            document.write(c + "<br>")
+
+
+
+            
+            document.write("<h3>(4)--concat & join--</h3><br>")
+            var d =[100,200,300,400,500]
+            document.write(d + "<br>")
+            var a = [600,700,800,900]
+            var b = d.concat(a);
+            document.write(b + "<br>")
+            var  c = b.join("////")
+            document.write(c + "<br>")
+
+
+            document.write("<h3>(5)--Slice & Splice--</h3><br>")
+            var a =[100,200,300,400,500]
+            document.write(a + "<br>");
+            var b = a.slice(1,3);
+            document.write(b + "<br>")
+
+            a.splice(3,0, "ram","shyam")
+            document.write(a + "<br>")
+           
+            document.write("<h3>(6)--IsArray--</h3><br>")
+            var x =[100,200,300,400,500];
+
+            document.write(x + "<br>");
+
+            if(Array.isArray(x)){
+            document.write("This is an Array.")
+             }else{
+                document.write("This is not an Array.")
+        
+                    }
+
+            
+
+    </script>
+    <br>
+    <a href="index.html"><button type="button" class="btn btn-primary ">back to home</button></a>
+
+</body>
+</html>
