@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window_bom</title>
+</head>
+<body onresize="resize()">
+   
+    
+    <script>
+        
+        // function resize(){
+        //     var height = window.innerHeight;
+        //     var width = window.innerWidth;
+        //    console.log('inner height: ' + height);
+        //    console.log('inner width'+ width);
+        // }
+
+
+        function resize(){
+            // console.clear()
+
+            var screenWidth= window.screen.width;
+            var screenHeight= window.screen.height;
+            var screenAvailWidth= window.screen.availWidth;
+            console.log('screenWidth'+screenWidth);
+            console.log('screenHeight'+screenHeight);
+            console.log('screenAvailWidth'+screenAvailWidth);
+        }
+
+    </script>
+</body>
+</html>

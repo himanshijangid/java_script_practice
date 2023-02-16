@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM_moveTo&moveBy</title>
+    <style>
+        button{
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWindow()" >Open New window</button><br>
+
+    <button onclick="moveToWindow()">Move to window</button><br>
+    <button onclick="moveByWindow()">Move by window</button>
+<script>
+    var myWindow;
+    function openWindow(){
+        myWindow= window.open("","","width=200px","height=200px");
+        myWindow.document.write("<p>This is my Window</p>")
+    }
+    function moveToWindow(){
+        myWindow.moveTo(200,200);
+        myWindow.focus();
+        
+    }
+</script>
+</body>
+</html>
